@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>IncidentIQ</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <script>try{var t=localStorage.getItem('iq-theme');if(t)document.documentElement.dataset.theme=t}catch(e){}</script>
+</head>
+<body>
+<aside class="rail">
+    <div class="brand"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12h4l2.5-6 4 12 2.5-6H22"/></svg>IncidentIQ</div>
+    <nav>
+        <a href="#/analyze" data-r="analyze">Analyze</a>
+        <a href="#/dashboard" data-r="dashboard">Dashboard</a>
+        <a href="#/incidents" data-r="incidents">Incidents</a>
+    </nav>
+    <button class="theme" id="theme" type="button">Switch theme</button>
+</aside>
+<main id="view"></main>
+<div id="toasts" aria-live="polite"></div>
+<script src="js/app.js"></script>
+</body>
+</html>
